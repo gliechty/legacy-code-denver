@@ -1,28 +1,41 @@
 <ion-header-bar id='senseus-header'>Event Times</ion-header-bar>
-<ion-header-bar id='senseus-calendar-header'>
-<div class='w100 flex-display-center flex-row' ng-controller="CreateEventCalendarCTRL" ng-init="initHeader()">
-	<table id='day-header-table' class="table w100 h100" style='table-layout:fixed;'>
-	<thead>
-	<tr>
-	<th id='header-time-column'>
-		<div class='button' ng-click='changeTimeView(-1)'><i class='icon ion-arrow-left-c'></i></div>
-        <div class='button' ng-click='changeTimeView(1)'><i class='icon ion-arrow-right-c'></i></div>
-	</th>
-	<th>{{Sunday}}</th><th>{{Monday}}</th><th>{{Tuesday}}</th><th>{{Wednesday}}</th><th>{{Thursday}}</th><th>{{Friday}}</th><th>{{Saturday}}</th>
-	</tr>
-	</thead>
-	</tbody>
-	</table>
-</div>
+
+<ion-header-bar id='senseus-calendar-header' class="bar-subheader">
+	<div class="wrapper">
+		<div class='w100 flex-display-center flex-row' ng-controller="CreateEventCalendarCTRL" ng-init="initHeader()" has-header="true">
+			<table id='day-header-table' class="table w100 h100" style='table-layout:fixed;'>
+				<thead>
+					<tr>
+						<th id='header-time-column'>
+							<div class='button' ng-click='changeTimeView(-1)'><i class='icon ion-arrow-left-c'></i></div>
+					        <div class='button' ng-click='changeTimeView(1)'><i class='icon ion-arrow-right-c'></i></div>
+						</th>
+						<th>{{Sunday}}</th>
+						<th>{{Monday}}</th>
+						<th>{{Tuesday}}</th>
+						<th>{{Wednesday}}</th>
+						<th>{{Thursday}}</th>
+						<th>{{Friday}}</th>
+						<th>{{Saturday}}</th>
+					</tr>
+				</thead>
+			<!-- </tbody> -->
+			</table>
+		</div>
+	</div>
 </ion-header-bar>
-<ion-content id='week-calendar' ng-controller="CreateEventCalendarCTRL" ng-init="initCalendar()" class='flex-column w100'>
-<table class="table w100 h100" style='table-layout:fixed; margin-top:0;'>
-<!--<thead></thead>-->
-<tbody id='calendar-week-table'>
-<tr ng-repeat="x in hours track by $index">
-<td>{{hoursAMPM[$index]}}</td>
-<td ng-repeat="y in daysOfWeek track by $index"><div class='timeBlock' ng-click='realClickedTimeDiv(x,y)' ng-class="{'timeBlock-active': findWithAttr(timeBlocks, 'timeString', x+y) > -1}">&nbsp;<div>&nbsp;</div></div></td>
-</tr>
-</tbody>
-</table>
+
+<ion-content id='week-calendar' ng-controller="CreateEventCalendarCTRL" ng-init="initCalendar()" class='flex-column w100 has-header' has-header="true">
+	<table class="table w100 h100" style='table-layout: fixed; position: relative'>
+	<!--<thead></thead>-->
+		<tbody id='calendar-week-table'>
+			<tr ng-repeat="x in hours track by $index">
+				<td>{{hoursAMPM[$index]}}</td>
+				<td ng-repeat="y in daysOfWeek track by $index">
+					<div class='timeBlock' ng-click='realClickedTimeDiv(x,y)' ng-class="{'timeBlock-active': findWithAttr(timeBlocks, 'timeString', x+y) > -1}">&nbsp;<div>&nbsp;</div>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
 </ion-content>

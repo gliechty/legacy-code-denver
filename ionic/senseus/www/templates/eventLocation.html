@@ -32,39 +32,42 @@ span.stars span {
 <ion-header-bar id='senseus-header'>Event Location</ion-header-bar>
 <ion-view class='event-name-container' ng-controller="CreateEventLocationCTRL" ng-init="initLocation()">
 	<div id='location-container' style='height: 100%;width: 100%;'>
-    <input id='google-autocomplete'  type='text' placeholder='Enter location here...' style="width:100%;">
-    <div id="map_container" style="height: 50%;width: 100%">
-      <div id="event-google-map"></div>
-    </div>
+    	<!-- <input id='google-autocomplete'  type='text' placeholder='Enter location here...' style="width:100%;"/> -->
+    	<div id="map_container" style="height: 50%;width: 100%">
+      		<div id="event-google-map"></div>
+    	</div>
 		<div id='location-ratings-div' class='row'  style='height:5%;width:100%;border: 1px solid black'>
 		<!--<span id='outer-stars' class="stars"></span><span id='outer-rating'></span><span id='outer-users'></span>-->
 		</div>
-		<div id='location-reviews-div' class='card hide-me-please' style='height:30%;width:100%;'>
-		<!--<div class="row flex-display-center" style="height:10%;"><h3 class="title">Reviews</h3></div>-->
+		<div class="padding-added">
+			<input id='google-autocomplete'  type='text' placeholder='Enter location here...' style="width:100%;"/>
+		</div>
+	</div>
+	<div id='location-reviews-div' class='card hide-me-please' style='height:30%;width:100%;'>
+	<div class="row flex-display-center" style="height:10%;"><h3 class="title">Reviews</h3></div>
 		<div style="height:80%">
 			<ion-slide-box show-pager="true">
-			<ion-slide>
-				<div id='review0' style='width:100%;height:100%;padding-left:2%;padding-right:2%;'>
-				</div>
-			</ion-slide>
-			<ion-slide>
-				<div id='review1' style='width:100%;height:100%;padding-left:2%;padding-right:2%;'>
-				</div>
-			</ion-slide>
-			<ion-slide>
-				<div id='review2' style='width:100%;height:100%;padding-left:2%;padding-right:2%;'>
-				</div>
-			</ion-slide>
-			<ion-slide>
-				<div id='review3' style='width:100%;height:100%;padding-left:2%;padding-right:2%;'>
-				</div>
-			</ion-slide>
-			<ion-slide>
-				<div id='review4' style='width:100%;height:100%;padding-left:2%;padding-right:2%;'>
-				</div>
-			</ion-slide>
+				<ion-slide>
+					<div id='review0' style='width:100%;height:100%;padding-left:2%;padding-right:2%;'>
+					</div>
+				</ion-slide>
+				<ion-slide>
+					<div id='review1' style='width:100%;height:100%;padding-left:2%;padding-right:2%;'>
+					</div>
+				</ion-slide>
+				<ion-slide>
+					<div id='review2' style='width:100%;height:100%;padding-left:2%;padding-right:2%;'>
+					</div>
+				</ion-slide>
+				<ion-slide>
+					<div id='review3' style='width:100%;height:100%;padding-left:2%;padding-right:2%;'>
+					</div>
+				</ion-slide>
+				<ion-slide>
+					<div id='review4' style='width:100%;height:100%;padding-left:2%;padding-right:2%;'>
+					</div>
+				</ion-slide>
 			</ion-slide-box>
 		</div>
-		</div>
-</div>
+	</div>
 </ion-view>
