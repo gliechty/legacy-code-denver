@@ -3,10 +3,18 @@
   <div id='event-area' class='flex-column w100 list'>
 		<div id='add-event-image-div'class='item flex-display-center flex-row w100'><a class='flex-display-center button event-button' id='add-event-image-button'><i class='icon ion-image' style='margin-right:5%'></i><span>Add Image for Event</span></a></div>
 		<div class='flex-row item'></div>
-		<div class='flex-row item flex-align-center'>Name: {{eventInfo.eventName}}</div>
-		<div class='flex-row item flex-align-center'>Description: {{eventInfo.eventDescription}}</div>
-		<div class='flex-row item flex-align-center'><span style='margin-right:2%;'><i class="icon ion-android-calendar" style="font-size:48px;"></i></span>{{getDates()}}</div>
-		<div class='flex-row item flex-align-center'><span style='margin-right:2%;'><i class="icon ion-location" style="font-size:48px"></i></span>{{getLocations()}}</div>
+		<div class="padding-added">
+			<div class='flex-row item flex-align-center'>Name: {{eventInfo.eventName}}</div>
+		</div>
+		<div class="padding-added">
+			<div class='flex-row item flex-align-center'>Description: {{eventInfo.eventDescription}}</div>
+		</div>
+		<div class="padding-added">
+			<div class='flex-row item flex-align-center'><span style='margin-right:2%;'><i class="icon ion-android-calendar" style="font-size:48px;"></i></span>{{getDates()}}</div>
+		</div>
+		<div class="padding-added">
+			<div class='flex-row item flex-align-center'><span style='margin-right:2%;'><i class="icon ion-location" style="font-size:48px"></i></span>{{getLocations()}}</div>
+		</div>
 		<div class='event-row'>
 			<div class='event-col90'>Guests: 
 				<ul>
