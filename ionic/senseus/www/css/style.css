@@ -1,8 +1,19 @@
-div.event-col10{
-	display: block;
-}
 
 /*font-size for input labels on event details page*/
 p.input-label{
 	font-size: 200%;
+}
+
+div.event-col10.col-md-2.col-sm-2.col-lg-2{
+	display: inline-block;
+}
+
+<div.not-input-label.event-col90.pr1.col-md-10.col-sm-10.col-lg-10{
+	display: inline-block;
+}
+
+@media (max-width: 700px){
+	p.input-label{
+		font-size: 120%;
+	}
 }
