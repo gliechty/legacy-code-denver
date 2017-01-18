@@ -1,1 +1,8 @@
-/* Empty. Add your own CSS if you like */
+div.event-col10{
+	display: block;
+}
+
+/*font-size for input labels on event details page*/
+p.input-label{
+	font-size: 200%;
+}
