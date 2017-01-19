@@ -24,3 +24,7 @@ div.event-col10.col-md-2.col-sm-2.col-lg-2{
 #senseus-calendar-header{
 	margin: 0;
 }
+
+#senseus-header.bar.bar-header.disable-user-behavior{
+	margin-bottom: 5%;
+}

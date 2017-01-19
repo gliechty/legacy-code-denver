@@ -13,31 +13,5 @@
 					</div>
 				  <div class="not-input-label event-col90 pr1 col-md-10 col-sm-10 col-lg-10"><input ng-model='eventInfo.eventDescription'></input></div>
 			</div>
-			<div class="item"></div>
-
-			<div class="item flex-row pl1">
-				 <span class='event-col90'>Enable location sharing?</span>
-         <span class='col10'>
-				<input class='tgl tgl-light' id='enableLoc' ng-model='locationSharing' type='checkbox'>
-				<label class='tgl-btn' for='enableLoc'></label>
-         </span>
-			</div>
-
-			<div class="item"></div>
-			<div id='event-type-container' class="flex-row">
-				<div class="list event-type-options flex-column w100">
-					<div class="full-width flex-display-center"><h3 class="title w100 item" style="text-align:center">Event Type</h3></div>
-					<div class="flex-display-center full-width">
-						<ion-radio icon='ion-ios-checkmark' ng-model="eventChoice" ng-value="'public'">Public</ion-radio>
-					</div>
-					<div class="flex-display-center full-width">
-					<ion-radio icon='ion-ios-checkmark' ng-model="eventChoice" ng-value="'friends'">Friends</ion-radio>
-					</div>
-					<div class="flex-display-center full-width">
-					<ion-radio icon='ion-ios-checkmark' ng-model="eventChoice" ng-value="'invite'">Invite Only</ion-radio>
-					</div>
-				</div>
-			</div>
-    <div class="flex-row item full-width" style="flex-grow: 10"></div>
 		</div>
 </ion-content>
